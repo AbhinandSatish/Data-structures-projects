@@ -63,6 +63,65 @@ In `main.cpp`, I implemented the user interface and interaction logic. This file
 4. **Debugging**: 
     - Debugging was done using `std::cout` and `std::cerr` statements to trace errors. This helped me identify and fix issues in the code.
 
+### Command Line Arguments
+
+Your program will support 3 commands.
+
+#### Command 1: add a music track to a playlist
+The first argument is the name of an input file which contains a playlist. The second argument is the name of another input file which contains all available music tracks. The third argument is the output file. The fourth argument is the action, which in this case is "add". The fifth argument is the title of the music track.
+
+```console
+./nyplaylists.exe playlist.txt library.txt output.txt add title
+```
+
+This command will add a music track (specified by the title) to the end of a playlist.
+
+For example, the following command will add the song "Umbrella" to the end of the playlist.
+```console
+./nyplaylists.exe playlist_tiny1.txt library.txt output.txt add "Umbrella"
+```
+
+#### Command 2: remove a music track from a playlist
+The first argument is the name of an input file which contains a playlist. The second argument is the name of another input file which contains all available music tracks. The third argument is the output file. The fourth argument is the action, which in this case is "remove". The fifth argument is the title of the music track.
+
+```console
+./nyplaylists.exe playlist.txt library.txt output.txt remove title
+```
+
+For example, the following command will remove the song "Always Remember Us This Way" from the playlist.
+```console
+./nyplaylists.exe playlist_tiny1.txt library.txt output.txt remove "Always Remember Us This Way"
+```
+
+#### Command 3: move a music track to a new position on the playlist
+The first argument is the name of an input file which contains a playlist. The second argument is the name of another input file which contains all available music tracks. The third argument is the output file. The fourth argument is the action, which in this case is "move". The fifth argument is the title of the music track. The sixth argument is the new position - where this user wants the music track to be located on the playlist. Note that, unliked array indexing in C/C++, positioning in Spotify starts at 1, as opposed to 0. This can be seen in the above Spotify screenshot: the first position is position 1.
+
+```console
+./nyplaylists.exe playlist.txt library.txt output.txt move title [new_position]
+```
+
+For example, the following command will move the song "I Will Never Love Again - Film Version" to position 1.
+```console
+./nyplaylists.exe playlist_tiny1.txt library.txt output.txt move "I Will Never Love Again - Film Version" 1
+```
+
+### Input and Output File Format
+
+All the input files and output files have the same format. Take the playlist_tiny1.txt as an example, this file has the following 4 lines:
+
+```console
+"Perfect Duet" Ed Sheeran, Beyonce
+"Always Remember Us This Way" Lady Gaga
+"Million Reasons" Lady Gaga
+"I Will Never Love Again - Film Version" Lady Gaga, Bradley Cooper
+```
+
+Each line has two fields, the music title, and the artist(s). There is one single space separating these two fields.
+
+### Handling Music Tracks with the Same Title
+
+In cases where multiple tracks may have the same title, choose the first track from the input file. This is NOT the natural behavior of Spotify, but this decision is just to simplify your implementation.
+
 ### Reflection and Self Assessment
 
 This project was a great learning experience. I faced several challenges, especially with C++ syntax and string manipulation. However, with persistence and help from mentors, I was able to overcome these obstacles. The most rewarding part was seeing the playlist manager work as expected after implementing and testing all the functions.
