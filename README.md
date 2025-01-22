@@ -1,21 +1,21 @@
 # Data-structures-projects
 ## Projects Overview
 
-In this repository, I have explored different uses for various types of data structures and algorithms. Each project focuses on a specific data structure or algorithm, demonstrating its implementation and practical applications. Below is a brief overview of each project:
+In this repository, I have explored different uses for various types of data structures and algorithms. Each project focuses on a specific data structure or algorithm, demonstrating its implementation and practical applications. Below is a brief overview of structures used in some projects: 
 
-1. **Project : Linked Lists**
+1. **Linked Lists**
     - **Purpose:** To understand the implementation and usage of singly and doubly linked lists.
     - **Details:** This project includes operations such as insertion, deletion, and traversal of linked lists.
 
-2. **Project : Binary Trees**
+2. **Binary Trees**
     - **Purpose:** To explore the concepts of binary trees, including binary search trees (BST).
     - **Details:** This project covers tree traversal methods (in-order, pre-order, post-order) and BST operations.
 
-3. **Project : Graph Algorithms**
+3. **Graph Algorithms**
     - **Purpose:** To implement and analyze graph algorithms like Depth-First Search (DFS) and Breadth-First Search (BFS).
     - **Details:** This project includes graph representation, traversal, and pathfinding algorithms.
 
-4. **Project : Sorting Algorithms**
+4. **Sorting Algorithms**
     - **Purpose:** To compare different sorting algorithms such as Quick Sort, Merge Sort, and Bubble Sort.
     - **Details:** This project provides a performance analysis of each sorting algorithm.
 
