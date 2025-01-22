@@ -1,6 +1,5 @@
 
 
-ESTIMATE OF # OF HOURS SPENT ON THIS ASSIGNMENT:  < 8 hours >
 ## Project Overview
 
 In this project, I implemented a Spotify Playlist manager using C++. The main objective was to create a program that allows users to add, remove, and move songs within a playlist. The project is divided into two main files: `chat.cpp` and `main.cpp`.
